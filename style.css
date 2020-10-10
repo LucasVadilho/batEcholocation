@@ -1,77 +1,20 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
 }
 
-@charset "UTF-8";
-
-:root {
-    /* Common between themes */
-    --border-color: #009FE3;
-    --blockquote-border-color: #009FE3;
-    --code-color: #f8f8f2;
-    --code-bg-color: #505050a1;
-    --thumbnail-size: 150px;
-
-    /* Theme specific */
-    --bg-color: #F8F8FF;
-    --secondary-bg-color:#F2F2F4;
-    --body-color: rgba(0, 0, 0, 0.9);
-    --post-color: rgba(51, 38, 38, 0.44);
-    --heading-color: #000;
-    --blockquote-text-color: #585858;
-    --tag-color: #0053b9;
-    --active-tag-color: #003679;
-    --a-color: #009FE3;
-}
-
-html[data-theme='dark'] {
-    --bg-color: #292a2d;
-    --secondary-bg-color: #2c2d32;
-    --body-color: rgba(255, 255, 255, 0.75);
-    --post-color: rgba(0, 0, 0, 0.44);
-    --heading-color: rgb(169, 169, 179);
-    --blockquote-text-color: #a0a0a0;
-    --tag-color: #50c7ff;
-    --active-tag-color: #a4def9;
-    --a-color: #50c7ff;
-}
-
-html {
-    background-color: var(--bg-color);
-    font-family: "Computer Modern Serif";
-    font-variant-numeric: oldstyle-nums;
-}
-
 body {
     width: 100%;
     margin: 0;
-    color: var(--body-color);
-    background-color: var(--bg-color);
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #F8F8FF;
 }
 
 p {
     line-height: 1.9em;
     font-size: 1em;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:link,
-a:visited {
-    color: var(--body-color);
-}
-
-a:hover {
-    color: var(--tag-color);
-    cursor: pointer;
-	transition: all 0.3s ease-in-out;
-}
-
-a:active {
-    color: var(--active-tag-color);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -80,40 +23,6 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 0.1em;
     margin-block-start: 20px;
     margin-block-end: 20px;
-}
-
-h1 {
-    font-size: 1.75em;
-}
-
-h2 {
-    font-size: 1.55em;
-}
-
-h3 {
-    font-size: 1.40em;
-}
-
-h4 {
-    font-size: 1.30em;
-}
-
-h5 {
-    font-size: 1.20em;
-}
-
-h6 {
-    font-size: 1.15em;
-}
-
-
-body {
-    margin-top: 20px;
-}
-
-h1 {
-    width: auto;
-    margin: auto;
 }
 
 #container{
@@ -129,7 +38,8 @@ h1 {
         "sliders sliders"
         "sketch sketch"
         "plotTitle plotTitle"
-        "freq amp";
+        "freq amp"
+        "texto texto";
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -169,4 +79,8 @@ main {
 
 #sliders input {
     width: 100%;
+}
+
+#texto {
+    grid-area: texto;
 }
